@@ -1,7 +1,7 @@
 module.exports = {
   pgUser: "wesley",
-  pgHost: "producao.postgres.database.azure.com",
-  pgDatabase: "producao",
+  pgHost: "homolog.postgres.database.azure.com",
+  pgDatabase: "homolog",
   pgPassword: "ProjetoInt123",
   pgPort: "5432"
 };
