@@ -5,7 +5,14 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+    optionSuccessStatus: 200,
+    "Access-Control-Allow-Origin": "*",
+  })
+);
 app.use(bodyParser.json());
 
 const { Pool } = require("pg");
